@@ -1,0 +1,31 @@
+<div class="tableContainer">
+  <div class="searchContainer">
+    <input type="text" [(ngModel)]="filteredStatus " class="searchtab" placeholder="search user">
+    
+  </div>
+  <div class="tableHeader">
+
+      <div class="selectColumn">
+        <!-- <input type="checkbox" name="select" id="select" > -->
+        <mat-checkbox [(ngModel)]="checkedReference.checked" (change)="selectedall()"></mat-checkbox>
+      </div>
+      <div class="nameColumn">
+        Name
+        <i class="material-icons" *ngIf="!sortDirection" (click)="sortit()">
+          arrow_upward
+        </i>
+        <i class="material-icons" *ngIf="sortDirection" (click)="sortit()">
+          arrow_downward
+        </i>
+      </div>
+  
+    </div>
+  <div class="contentlist">
+      
+        <div class="tableContents" *ngFor="let member of members | sorting:{property:'name' , direction: sortDirection} | filter:filteredStatus; let i=index">
+          <app-member-item [member]="member" [index]="i" >
+          </app-member-item>
+        </div>
+  </div>
+
+</div>

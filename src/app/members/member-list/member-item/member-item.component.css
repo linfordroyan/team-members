@@ -1,0 +1,28 @@
+.memberlist {
+  font-family: Heebo-Regular;
+  height: 75px;
+  display: flex;
+}
+
+.memberlist:hover {
+  background-color: rgba(198, 203, 212, 0.096);
+  border-left: 4px solid rgb(0, 140, 255);
+  cursor: pointer;
+}
+
+.selectColumn {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.nameColumn {
+  flex-basis: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+:focus{
+  outline: none;
+}

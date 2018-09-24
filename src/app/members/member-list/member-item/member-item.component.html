@@ -1,0 +1,7 @@
+<div class="memberlist" >
+  <div class="selectColumn">
+    <mat-checkbox [(ngModel)]=member.selected (change)="deselct(member)"></mat-checkbox>
+  </div>
+  <div class="nameColumn" [routerLink]="[index,member.name]">{{member.name}}</div>
+
+</div>

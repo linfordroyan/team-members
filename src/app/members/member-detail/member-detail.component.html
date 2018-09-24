@@ -1,0 +1,28 @@
+<div class="button-conatiner clearfix">
+  <button class="updateButton" (click)="updatemember()">Update</button>
+  <button class="deleteButton" (click)="deletemember()">Delete</button>
+</div>
+<div class="member-details" *ngIf="member">
+  <div class="rowCotainer">
+    <div class="labelContainer">Name:</div>
+    <div class="contentContainer">{{member.name}}</div>
+  </div>
+  <div class="rowCotainer">
+    <div class="labelContainer">Company:</div>
+    <div class="contentContainer">{{member.company}}</div>
+  </div>
+  <div class="rowCotainer">
+    <div class="labelContainer">Status:</div>
+    <div class="contentContainer">{{member.status}}</div>
+  </div>
+  <div class="rowCotainer">
+    <div class="labelContainer">Last Updated:</div>
+    <div class="contentContainer">{{member.lastUpdated}}</div>
+  </div>
+  <div class="rowCotainer">
+    <div class="labelContainer">Notes:</div>
+    <div class="contentContainer">{{member.notes}}</div>
+  </div>
+
+
+</div>

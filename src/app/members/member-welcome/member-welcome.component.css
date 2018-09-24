@@ -1,0 +1,20 @@
+.welcomeBlock{
+    width:100%;
+    
+   display: flex;
+   justify-content: center;
+   padding: 180px 0px;
+}
+.welcomeBlock div {
+    text-align: center;
+    font-family: Roboto-Bold;
+    border-radius: 5px;
+    box-shadow: inset 6px 0px 17px 2px cadetblue;
+    padding: 20px;
+}
+p{
+    font-size: 20px;
+}
+h1{
+    font-size: 30px;
+}

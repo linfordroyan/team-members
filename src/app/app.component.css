@@ -1,0 +1,8 @@
+
+.maincontainer{
+    width: 1080px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+  height: -webkit-fill-available;
+}

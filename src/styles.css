@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'style/css/reset.css';
+@import 'style/css/font.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+body{
+    width: 100%;
+    background-color: #4b74ff;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgba(172, 172, 172, 0.452);
+  } /* the new scrollbar will have a flat appearance with the set background color */
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.596); 
+  } /* this will style the thumb, ignoring the track */
+  
+  ::-webkit-scrollbar-button {
+      width: 0px;
+      height: 0px;
+    background: rgba(255, 255, 255, 0);
+  } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+  
+  ::-webkit-scrollbar-corner {
+    background-color: black;
+  }
+
+  .mat-checkbox-checkmark {
+    width: 0px;
+}
+
+.mat-checkbox-checkmark, .mat-checkbox-mixedmark {
+    width: 0px;
+}

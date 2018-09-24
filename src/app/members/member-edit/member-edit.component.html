@@ -1,0 +1,49 @@
+<div class="popupWindow">
+    <div class="popup-container">
+      <a [routerLink]="['']" class="closeButton">
+        <i class="material-icons ">
+          clear
+        </i></a>
+      <h1>Update Member</h1>
+  
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="formContainer">
+        <div formGroupName="userData">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" formControlName="name">
+            <span *ngIf="!signupForm.get('userData.name').valid && signupForm.get('userData.name').touched " class="help-block">
+              PLease enter a valid Name
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="company">Company </label>
+            <input type="text" id="company " class="form-control" formControlName="company" >
+            <span *ngIf="!signupForm.get('userData.company').valid && signupForm.get('userData.company').touched " class="help-block">Please
+              enter a valid Company
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="status">Status </label>
+            <select style="cursor: pointer;" name="status" id="status" class="form-control" formControlName="status">
+              <option selected="selected" disabled="">Please Select</option>
+              <option value="Close">Closed</option>
+              <option value="Idle">Idle</option>
+              <option value="Active">Active</option>
+            </select>
+            <span *ngIf="!signupForm.get('userData.status').valid && signupForm.get('userData.status').touched " class="help-block">Please
+              select a valid status
+            </span>
+          </div>
+          <div class="form-group">
+            <label for="note">Note </label>
+            <textarea name="note" id="note" cols="25" rows="5" class="form-control" formControlName="note" ></textarea>
+            <span *ngIf="!signupForm.get('userData.note').valid && signupForm.get('userData.note').touched " class="help-block">Please
+              describe a valid note
+            </span>
+          </div>
+        </div>
+        <span *ngIf="!signupForm.valid && signupForm.touched " class="help-block">Please enter a valid data</span>
+        <button class="btn btn-primary" type="submit" [disabled]="!signupForm.valid">Submit</button>
+      </form>
+    </div>
+  </div>

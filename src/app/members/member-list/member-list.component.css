@@ -1,0 +1,89 @@
+.tableContainer {
+  background-color: rgba(181, 181, 181, 1);
+  box-sizing: border-box;
+  padding: 10px 0px;
+  box-shadow:  -6px 10px 14px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.contentlist{
+  overflow: auto;
+  height: 400px;
+}
+.tableHeader {
+  display: flex;
+  width: 90%;
+  margin: 0px auto;
+  background-color: #fbfbfb;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  height: 100px;
+  color: rgba(51, 51, 51, 0.5);
+  font-weight: 900;
+}
+
+.selectColumn {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.nameColumn {
+  flex-basis: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.tableContents {
+  background-color: white;
+  width: 90%;
+  margin: 0px auto;
+  height: 75px;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  color: rgb(12, 11, 11);
+  font-weight: 900;
+}
+
+.tableContents:nth-child(odd) {
+  background-color: rgba(198, 203, 212, 0.24);
+}
+
+.material-icons {
+  font-size: 16px;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+}
+
+.searchtab{
+  width: 100%;
+  background-color: white;
+  box-shadow: inset 1px 1px 2px 2px gray;
+  height: 100%;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  font-family: roboto-Regular;
+  
+}
+.searchtab:focus{
+  background-color: #fbfbfb5e;
+}
+.searchContainer{
+  width: 90%;
+  margin: 5px auto;
+  height: 40px;
+  box-sizing: border-box;
+  
+}
+
